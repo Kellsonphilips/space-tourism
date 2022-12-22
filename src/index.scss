@@ -1,0 +1,16 @@
+:root {
+  --font-primary: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --text-color: rgb(240, 248, 255);
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

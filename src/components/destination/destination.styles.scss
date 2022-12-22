@@ -1,0 +1,96 @@
+$titleFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.destination-container {
+  color: aliceblue;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 300px 250px;
+  background-size: cover;
+
+  .destination-header {
+    height: fit-content;
+    font-family: $titleFont;
+    font-size: 1.2vw;
+    position: relative;
+    bottom: 120px;
+    text-transform: uppercase;
+
+    .destination-index {
+      opacity: 0.4;
+      padding-right: 1vw;
+    }
+  }
+
+  .destination-image {
+    position: relative;
+    right: 300px;
+  }
+
+  .destination-detail-container {
+    width: 22vw;
+
+    .destination-navbar {
+      display: flex;
+      justify-content: flex-start;
+      font-family: $titleFont;
+      text-transform: uppercase;
+
+      .nav-link {
+        width: 5vw;
+        cursor: pointer;
+        padding-right: 20px;
+      }
+
+    }
+
+    .destination {
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 5vw;
+      letter-spacing: 15px;
+    }
+
+    .destination-details {
+      line-height: 20px;
+    }
+
+    .horizontal-line {
+      border: 1px solid rgb(91, 85, 85);
+      width: 22vw;
+      opacity: 0.3;
+      margin: 50px 0 0 0;
+      position: relative;
+      bottom: 15px;
+    }
+
+    .destination-detail {
+      display: flex;
+      justify-content: flex-start;
+
+      .destination-distance {
+        padding-right: 60px;
+
+        .avg-dis {
+          font-size: 15px;
+        }
+
+        .distance {
+          font-size: 25px;
+        }
+      }
+
+      .destination-travel-time {
+        padding-right: 90px;
+        width: fit-content;
+
+        .est-time {
+          font-size: 15px;
+        }
+
+        .duration {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

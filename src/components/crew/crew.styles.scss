@@ -1,0 +1,68 @@
+$background-image: "../../assets/crew/background-crew-desktop.jpg";
+
+
+.crew-container {
+  color: aliceblue;
+  display: flex;
+  height: 100vh;
+  padding: 300px 300px;
+  background: $background-image;
+  background-size: cover;
+  justify-content: space-between;
+  position: relative;
+  z-index: -99;
+
+
+  .crew-info-container {
+    width: clamp(20rem, 80%, 30rem);
+
+    .crew-header {
+      font-size: 1.4vw;
+      font-family: var(--font-primary);
+      font-weight: lighter;
+      position: relative;
+      bottom: 120px;
+      text-transform: uppercase;
+
+      .crew-index {
+        padding-right: 15px;
+        opacity: 0.4;
+      }
+    }
+
+    .crew-details-container {
+      position: relative;
+      top: 80px;
+
+      .crew-role {
+        font-size: 2rem;
+        font-family: var(--font-primary);
+        text-transform: uppercase;
+        font-weight: lighter;
+        opacity: 0.5;
+      }
+
+      .crew-name {
+        font-size: 2.5rem;
+        font-family: var(--font-primary);
+        text-transform: uppercase;
+        font-weight: lighter;
+      }
+
+      .crew-details {
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .crew-image-container {
+    position: relative;
+    bottom: 100px;
+
+    .image {
+      width: clamp(35rem, 70%, 65rem);
+      height: clamp(45rem, 70%, 75rem);
+    }
+  }
+
+}
