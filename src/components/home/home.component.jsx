@@ -6,7 +6,7 @@ const Home = () => {
     
   return (
     <div>
-      <Outlet/>
+      <Outlet />
       <div
         className="home-container"
         style={{ backgroundImage: `url(${background})` }}
@@ -21,7 +21,7 @@ const Home = () => {
             give you a truly out of this world experience!
           </p>
         </div>
-        <div className="explore-container">Explore</div>
+        <div className="explore-container" to="/destination">Explore</div>
       </div>
     </div>
   );

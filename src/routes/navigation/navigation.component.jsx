@@ -14,16 +14,16 @@ const Navigation = () => {
         </Link>
         <div className="hor-line"></div>
         <div className="navlinks">
-          <Link className="nav-link" to={"/"}>
+          <Link className="nav-link" to="/">
             <span className="nav-ident">00</span>Home
           </Link>
-          <Link className="nav-link" to={"/destination"}>
+          <Link className="nav-link" to="/destination">
             <span className="nav-ident">01</span>Destination
           </Link>
-          <Link className="nav-link" to={"/crew"}>
+          <Link className="nav-link" to="/crew">
             <span className="nav-ident">02</span>Crew
           </Link>
-          <Link className="nav-link" to={"/technology"}>
+          <Link className="nav-link" to="/technology">
             <span className="nav-ident">03</span>Technology
           </Link>
         </div>
