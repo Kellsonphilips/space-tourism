@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
 import Destination from "./components/destination/destination.component";
@@ -12,13 +13,17 @@ function App() {
 
   
   return (
-    <div >
-      <Navigation />
-      <Home path={"/"}/>
-      <Destination destinationData={allData} />
-      <Crew  crewData={allData} />
-      <Technology techData={allData}/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route
+          path="destination/*"
+          element={<Destination destinationData={allData} />}
+        />
+        <Route path="crew/*" element={<Crew crewData={allData} />} />
+        <Route path="technology/*" element={<Technology techData={allData} />} />
+      </Route>
+    </Routes>
   );
 }
 
