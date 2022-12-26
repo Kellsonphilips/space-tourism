@@ -1,17 +1,18 @@
-$titleFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 .destination-container {
-  color: aliceblue;
+  color: var(--text-color);
   display: flex;
   height: 100vh;
   justify-content: space-between;
   padding: 300px 250px;
   background-size: cover;
+  position: relative;
 
   .destination-header {
-    height: fit-content;
-    font-family: $titleFont;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+    height: 1.4vw;
+    font-family: var(--font-primary);
+    font-weight: lighter;
     position: relative;
     bottom: 120px;
     text-transform: uppercase;
@@ -24,6 +25,8 @@ $titleFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 
   .destination-image {
     position: relative;
+    width: 25vw;
+    height: 25vw;
     right: 300px;
   }
 
@@ -33,13 +36,15 @@ $titleFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     .destination-navbar {
       display: flex;
       justify-content: flex-start;
-      font-family: $titleFont;
+      font-family: var(--font-primay);
       text-transform: uppercase;
+      
 
-      .nav-link {
-        width: 5vw;
-        cursor: pointer;
-        padding-right: 20px;
+      .navLink {
+        color: var(--text-color);
+        font-size: 1vw;
+        text-decoration: none;
+        margin-right: 20px;
       }
 
     }
@@ -71,24 +76,23 @@ $titleFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
         padding-right: 60px;
 
         .avg-dis {
-          font-size: 15px;
+          font-size: 0.8vw;
         }
 
         .distance {
-          font-size: 25px;
+          font-size: 1.4vw;
         }
       }
 
       .destination-travel-time {
-        padding-right: 90px;
-        width: fit-content;
+
 
         .est-time {
-          font-size: 15px;
+          font-size: 0.8vw;
         }
 
         .duration {
-          font-size: 25px;
+          font-size: 1.4vw;
         }
       }
     }

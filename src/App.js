@@ -5,7 +5,6 @@ import Destination from "./components/destination/destination.component";
 import Crew from "./components/crew/crew.component";
 import DATA from "./data.json"
 import Technology from "./components/technology/technology.component";
-import "./App.scss";
 
 const allData = DATA; 
 

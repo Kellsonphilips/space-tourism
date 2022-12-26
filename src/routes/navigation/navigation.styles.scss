@@ -9,6 +9,7 @@
   height: 8vh;
   position: fixed;
   margin-left: 40px;
+  z-index: 1;
 
   .logo {
     top: 10px;
@@ -43,6 +44,7 @@
 
     .nav-link {
       color: #FFF;
+      font-size: 0.9vw;
       font-family: var(--font-primary);
       text-decoration: none;
       position: relative;
