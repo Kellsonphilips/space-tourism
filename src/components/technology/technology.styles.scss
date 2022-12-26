@@ -1,75 +1,91 @@
 
 .technology-container {
-    color: var(--text-color);
-    display: flex;
-    height: 100vh;
-    background-size: cover;
-    justify-content: space-between;
-    padding: 300px 0 300px 300px;
-    position: relative;
-    z-index: -99;
+  color: var(--text-color);
+  display: flex;
+  height: 100vh;
+  background-size: cover;
+  justify-content: space-between;
+  padding: 300px 0 300px 300px;
+  position: relative;
 
-    .technology-all-info-container {
-      width: clamp(20rem, 80%, 40rem);
 
-      .technology-header {
-        font-family: var(--font-primary);
-        font-size: 1.7vw;
-        position: relative;
-        bottom: 100px;
+  .technology-all-info-container {
+    width: clamp(20rem, 80%, 40rem);
 
-        .tech-index {
-          padding-right: 15px;
-          opacity: 0.4;
+
+    .technology-header {
+      bottom: 120px;
+      font-family: var(--font-primary);
+      font-size: 1.4vw;
+      font-weight: lighter;
+      position: relative;
+      text-transform: uppercase;
+      
+      .tech-index {
+        padding-right: 15px;
+        opacity: 0.4;
+      }
+    }
+    .technology-details-container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+
+
+      .technology-route-container {
+        padding-right: 30px;
+
+
+        .route-indexes {
+          color: #000;
+          display: flex;
+          width: 4vw;
+          height: 4vw;
+          justify-content: center;
+          align-items: center;
+          font-family: var(--font-primary);
+          font-size: 1.4rem;
+          border-radius: 35vw;
+          background-color: var(--text-color);
+          margin: 15px;
+          position: relative;
+          text-decoration: none;
+          
         }
       }
+      .technology-details {
+        padding: auto;
 
-      .technology-details-container {
-        display: flex;
-        justify-content: space-between;
 
-        .technology-route-container {
-          padding-right: 30px;
-          position: relative;
-
-          .route-indexes {
-            color: #000;
-            display: flex;
-            width: 4vw;
-            height: 25%;
-            justify-content: center;
-            align-items: center;
-            font-family: var(--font-primary);
-            font-size: 1.4rem;
-            border-radius: 35vw;
-            background-color: var(--text-color);
-            margin: 15px;
-            cursor: pointer;
-          }
+        .technology-detail-header {
+          font-family: var(--font-primary);
+          font-size: .8vw;
+          text-transform: uppercase;
+          letter-spacing: 1px;
         }
 
-        .technology-details {
-          padding: auto;
 
-          .technology-detail-header {
-            font-family: var(--font-primary);
-            font-size: .8vw;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-          }
+        .technology-name {
+          font-family: var(--font-primary);
+          font-size: 2.5vw;
+          text-transform: uppercase;
+          font-weight: lighter;
+        }
 
-          .technology-name {
-            font-family: var(--font-primary);
-            font-size: 2.5vw;
-            text-transform: uppercase;
-            font-weight: lighter;
-          }
-
-          .technology-description {
-            font-size: 0.9vw;
-            letter-spacing: 1px;
-          }
+        .technology-description {
+          font-size: 0.9vw;
+          letter-spacing: 1px;
         }
       }
     }
+  }
+
+  .technology-image-container {
+    height: fit-content;
+
+    .image {
+      width: 30vw;
+      height: 30vw;
+    }
+  }
 }
