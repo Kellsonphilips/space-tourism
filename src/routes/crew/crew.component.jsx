@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import background from "../../assets/crew/background-crew-desktop.jpg";
-import "./crew.styles.scss";
 import { useState } from "react";
+import "./crew.styles.scss";
+
 
 
 const Crew = ({ crewData }) => {
@@ -22,11 +22,7 @@ const Crew = ({ crewData }) => {
 
   return (
     <div>
-      <div
-        className="crew-container"
-        style={{ backgroundImage: `url(${background})` }}
-        key={id}
-      >
+      <div className="crew-container" key={id}>
         <div className="crew-info-container">
           <h2 className="crew-header">
             <span className="crew-index">02</span>Meet Your Crew
@@ -39,25 +35,25 @@ const Crew = ({ crewData }) => {
           </div>
           <div className="crew-navigation">
             <Link
-              className="crew-navs"
+              className={`crew-navs ${currentCrew === 5 && "active"}`}
               to="commander"
               name="5"
               onClick={handleCrewMemberChange}
             ></Link>
             <Link
-              className="crew-navs"
+              className={`crew-navs ${currentCrew === 6 && "active"}`}
               to="mission-specialist"
               name="6"
               onClick={handleCrewMemberChange}
             ></Link>
             <Link
-              className="crew-navs"
+              className={`crew-navs ${currentCrew === 7 && "active"}`}
               to="pilot"
               name="7"
               onClick={handleCrewMemberChange}
             ></Link>
             <Link
-              className="crew-navs"
+              className={`crew-navs ${currentCrew === 8 && "active"}`}
               to="flight-engineer"
               name="8"
               onClick={handleCrewMemberChange}

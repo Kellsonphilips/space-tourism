@@ -49,23 +49,12 @@
       text-decoration: none;
       position: relative;
       margin-right: 20px;
+      padding: 30px 0;
+      border-bottom: 4px solid transparent;
       cursor: pointer;
 
-      &::after {
-        position: absolute;
-        bottom: 0;
-        left: 20px;
-        right: 0;
-        top: 48px;
-        width: 0%;
-        content: '.';
-        color: transparent;
-        background: #FFF;
-        height: 4px;
-      }
-
-      &:hover::after {
-        width: 80%;
+      &:hover {
+        border-bottom: 4px solid rgb(180, 176, 176);
       }
 
       .nav-ident {
@@ -74,14 +63,12 @@
         padding-right: 10px;
         opacity: 0.5;
       }
-
-      @media (min-width:1025px) {
-        .navlinks {
-          padding: 25px 0 25px 70px;
-        }
-      }
     }
 
+    .active {
+      border-spacing: 20px;
+      border-bottom: 4px solid #FFF;
+    }
   }
 }
 

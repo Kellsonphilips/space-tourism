@@ -1,8 +1,13 @@
+$desktop-technology-background: "../../assets/technology/background-technology-desktop.jpg";
+$tablet-technology-background: "../../assets/technology/background-technology-tablet.jpg";
+$mobile-technology-background: "../../assets/technology/background-technology-mobile.jpg";
+
 
 .technology-container {
   color: var(--text-color);
   display: flex;
   height: 100vh;
+  background-image: url($desktop-technology-background);
   background-size: cover;
   justify-content: space-between;
   padding: 300px 0 300px 300px;
@@ -37,7 +42,7 @@
 
 
         .route-indexes {
-          color: #000;
+          color: var(--text-color);
           display: flex;
           width: 4vw;
           height: 4vw;
@@ -46,16 +51,24 @@
           font-family: var(--font-primary);
           font-size: 1.4rem;
           border-radius: 35vw;
-          background-color: var(--text-color);
+          border: rgb(81, 78, 78) 1px solid;
           margin: 15px;
           position: relative;
           text-decoration: none;
           
+          &:hover {
+            border: #FFF 1px solid;
+          }
+        }
+
+        .active {
+          color: #000;
+          background-color: var(--text-color);
         }
       }
+
       .technology-details {
         padding: auto;
-
 
         .technology-detail-header {
           font-family: var(--font-primary);
@@ -63,7 +76,6 @@
           text-transform: uppercase;
           letter-spacing: 1px;
         }
-
 
         .technology-name {
           font-family: var(--font-primary);
