@@ -1,4 +1,6 @@
-$background-image: "../../assets/crew/background-crew-desktop.jpg";
+$desktop-crew-background: "../../assets/crew/background-crew-desktop.jpg";
+$tablet-crew-background: "../../assets/crew/background-crew-tablet.jpg";
+$mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
 
 
 .crew-container {
@@ -6,10 +8,9 @@ $background-image: "../../assets/crew/background-crew-desktop.jpg";
   display: flex;
   height: 100vh;
   padding: 300px 300px;
-  background: $background-image;
+  background-image: url($desktop-crew-background);
   background-size: cover;
   justify-content: space-between;
-
 
   .crew-info-container {
     width: clamp(20rem, 80%, 29rem);
@@ -55,24 +56,24 @@ $background-image: "../../assets/crew/background-crew-desktop.jpg";
     .crew-navigation {
       display: flex;
       justify-content: flex-start;
-      position: relative;
-      top: 250px;
+      position: absolute;
+      bottom: 120px;
 
       .crew-navs {
         width: 1vw;
         height: 1vw;
-        background-color: rgb(83, 76, 73);
+        background-color: rgb(11, 10, 10);
         margin-right: 15px;
         border-radius: 50%;
-        border: rgb(119, 115, 115) 1px solid;
+        border: rgb(172, 164, 164) 1px solid;
 
         &:hover {
-          background: rgb(161, 160, 160);
+          background-color: rgb(161, 160, 160);
         }
+      }
 
-        &:active {
-          background: #FFF;
-        }
+      .active {
+        background-color: #FFF;
       }
     }
   }

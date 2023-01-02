@@ -1,14 +1,9 @@
-
-import background from "../../assets/home/background-home-desktop.jpg";
 import "./home.styles.scss"
 
 const Home = () => {
     
   return (
-    <div
-      className="home-container"
-      style={{ backgroundImage: `url(${background})` }}
-    >
+    <div className="home-container">
       <div className="home-text-container">
         <h2 className="home-title">So, you want to travel to</h2>
         <span className="space">Space</span>
@@ -19,7 +14,7 @@ const Home = () => {
           you a truly out of this world experience!
         </p>
       </div>
-      <div className="explore-container" to="/destination">
+      <div className="explore-container" to="destination">
         Explore
       </div>
     </div>

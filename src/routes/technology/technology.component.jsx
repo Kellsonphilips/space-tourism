@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import background from "../../assets/technology/background-technology-desktop.jpg";
-import "./technology.styles.scss";
 import { useState } from "react";
+import "./technology.styles.scss";
+
 
 
 const Technology = ({ techData }) => {
@@ -21,11 +21,7 @@ const Technology = ({ techData }) => {
     .replace(" ", "-")}-portrait.jpg`);
 
   return (
-    <div
-      className="technology-container"
-      style={{ backgroundImage: `url(${background})` }}
-      key={id}
-    >
+    <div className="technology-container" key={id}>
       <div className="technology-all-info-container">
         <h2 className="technology-header">
           <span className="tech-index">03</span>Space Launch 101
@@ -33,7 +29,7 @@ const Technology = ({ techData }) => {
         <div className="technology-details-container">
           <div className="technology-route-container">
             <Link
-              className="route-indexes"
+              className={`route-indexes ${useTechnology === 9 && "active"}`}
               to="launch-vehicle"
               name="9"
               onClick={handleTechnologyRoute}
@@ -41,7 +37,7 @@ const Technology = ({ techData }) => {
               1
             </Link>
             <Link
-              className="route-indexes"
+              className={`route-indexes ${useTechnology === 10 && "active"}`}
               to="spaceport"
               name="10"
               onClick={handleTechnologyRoute}
@@ -49,7 +45,7 @@ const Technology = ({ techData }) => {
               2
             </Link>
             <Link
-              className="route-indexes"
+              className={`route-indexes ${useTechnology === 11 && "active"}`}
               to="space-capsule"
               name="11"
               onClick={handleTechnologyRoute}
@@ -76,3 +72,4 @@ const Technology = ({ techData }) => {
 };
 
 export default Technology;
+ 

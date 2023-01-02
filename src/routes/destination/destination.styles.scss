@@ -1,3 +1,7 @@
+$desktop-destination-background: "../../assets/destination/background-destination-desktop.jpg";
+$tablet-destination-background: "../../assets/destination/background-destination-tablet.jpg";
+$mobile-destination-background: "../../assets/destination/background-destination-mobile.jpg";
+
 
 .destination-container {
   color: var(--text-color);
@@ -5,6 +9,7 @@
   height: 100vh;
   justify-content: space-between;
   padding: 300px 250px;
+  background-image: url($desktop-destination-background);
   background-size: cover;
   position: relative;
 
@@ -24,10 +29,10 @@
   }
 
   .destination-image {
-    position: relative;
+    position: absolute;
     width: 25vw;
     height: 25vw;
-    right: 300px;
+    left: 300px;
   }
 
   .destination-detail-container {
@@ -38,15 +43,23 @@
       justify-content: flex-start;
       font-family: var(--font-primay);
       text-transform: uppercase;
-      
 
       .navLink {
         color: var(--text-color);
         font-size: 1vw;
         text-decoration: none;
+        border-bottom: 3px solid transparent;
         margin-right: 20px;
+        padding: 10px 0;
+
+        &:hover {
+          border-bottom: 3px solid rgb(85, 81, 81);
+        }
       }
 
+      .active {
+        border-bottom: 3px solid rgb(255, 255, 255);
+      }
     }
 
     .destination {

@@ -1,4 +1,6 @@
-
+$desktop-background: "../../assets/home/background-home-desktop.jpg";
+$tablet-background: "../../assets/home/background-home-tablet.jpg";
+$mobile-background: "../../assets/home/background-home-mobile.jpg";
 
 .home-container {
   display: flex;
@@ -6,15 +8,13 @@
   height: 100vh;
   padding: 400px 200px 400px 350px;
   justify-content: space-between;
+  background-image: url($desktop-background);
   background-size: cover;
   
   
-
   .home-text-container {
     height: 30vh;
     width: 24rem;
-    
-    
 
     .home-title {
       text-transform: uppercase;
@@ -29,10 +29,9 @@
     }
 
     .welcome-message {
-        letter-spacing: 0.1rem;
-        line-height: 20px;
-    }
-    
+      letter-spacing: 0.1rem;
+      line-height: 20px;
+    } 
   }
 
   .explore-container {
@@ -54,8 +53,6 @@
       box-shadow: -2px 0px 6px 68px rgba(235,235,235,0.18);
       -webkit-box-shadow: -2px 0px 6px 68px rgba(235,235,235,0.18);
       -moz-box-shadow: -2px 0px 6px 68px rgba(235,235,235,0.18); 
-
     }
-
   }
 }

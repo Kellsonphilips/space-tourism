@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import background from "../../assets/destination/background-destination-desktop.jpg";
 import "./destination.styles.scss";
 
 
@@ -21,11 +20,7 @@ const Destination = ({ destinationData }) => {
 
   return (
     <div>
-      <div
-        className="destination-container"
-        style={{ backgroundImage: `url(${background})` }}
-        key={id}
-      >
+      <div className="destination-container" key={id}>
         <h2 className="destination-header">
           <span className="destination-index">01</span>Pick your destination
         </h2>
@@ -37,28 +32,30 @@ const Destination = ({ destinationData }) => {
         <div className="destination-detail-container">
           <div className="destination-navbar">
             <Link
-              className="navLink"
+              className={`navLink ${travelDestination === "Moon" && "active"}`}
               to="moon"
               onClick={destinationNavbarHandler}
             >
               Moon
             </Link>
             <Link
-              className="navLink"
+              className={`navLink ${travelDestination === "Mars" && "active"}`}
               to="mars"
               onClick={destinationNavbarHandler}
             >
               Mars
             </Link>
             <Link
-              className="navLink"
+              className={`navLink ${
+                travelDestination === "Europa" && "active"
+              }`}
               to="europa"
               onClick={destinationNavbarHandler}
             >
               Europa
             </Link>
             <Link
-              className="navLink"
+              className={`navLink ${travelDestination === "Titan" && "active"}`}
               to="titan"
               onClick={destinationNavbarHandler}
             >
