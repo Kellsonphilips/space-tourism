@@ -13,8 +13,7 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   
   
   .home-text-container {
-    height: 30vh;
-    width: 24rem;
+    width: 25vw;
 
     .home-title {
       text-transform: uppercase;
@@ -35,8 +34,8 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   }
 
   .explore-container {
-    height: 200px;
-    width: 200px;
+    height: 15vw;
+    width: 15vw;
     background-color: #FFF;
     color: #000;
     font-size: 22px;
@@ -55,4 +54,28 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
       -moz-box-shadow: -2px 0px 6px 68px rgba(235,235,235,0.18); 
     }
   }
+}
+
+@media screen and (max-width: 767px) {
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 170px 40px;
+    background-image: url($mobile-background);
+
+    .home-text-container {
+      width: 60vw;
+      text-align: center;
+    }
+
+    .explore-container {
+      height: 35rem;
+      width: 37vw;
+      position: relative;
+      left: 3rem;
+    }
+  }
+
 }
