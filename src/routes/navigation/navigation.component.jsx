@@ -1,56 +1,57 @@
 import { Outlet, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/shared/logo.svg";
-import { Fragment, useState } from "react";
+import { ReactComponent as Hanburger } from "../../assets/shared/icon-hamburger.svg";
+import { ReactComponent as CloseHamburger} from "../../assets/shared/icon-close.svg";
+import { Fragment, useEffect, useState } from "react";
+import NavBar from "../../components/nav-component/navbar.component";
 import "./navigation.styles.scss";
 
 
 const Navigation = () => {
 
   const [navText, setNavText] = useState("00Home");
+  const [isNavBarOpen, setIsNavBarOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   const handleNavClick = (event) => {
     const nav = event.target.textContent;
     setNavText(nav)
   }
 
+  const toggleHamburgerNavBar = () => {
+    setIsNavBarOpen(!isNavBarOpen)
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  },[])
+
+
   return (
     <Fragment>
       <div className="navigation-container" to="/">
         <Link to={"/"} className="logo">
-          <div>
-            <Logo />
-          </div>
+          <Logo />
         </Link>
         <div className="hor-line"></div>
-        <div className="navlinks">
-          <Link
-            className={`nav-link ${navText === "00Home" && "active"}`}
-            to="/"
-            onClick={handleNavClick}
-          >
-            <span className="nav-ident">00</span>Home
-          </Link>
-          <Link
-            className={`nav-link ${navText === "01Destination" && "active"}`}
-            to="/destination"
-            onClick={handleNavClick}
-          >
-            <span className="nav-ident">01</span>Destination
-          </Link>
-          <Link
-            className={`nav-link ${navText === "02Crew" && "active"}`}
-            to="/crew"
-            onClick={handleNavClick}
-          >
-            <span className="nav-ident">02</span>Crew
-          </Link>
-          <Link
-            className={`nav-link ${navText === "03Technology" && "active"}`}
-            to="/technology"
-            onClick={handleNavClick}
-          >
-            <span className="nav-ident">03</span>Technology
-          </Link>
+        {screenWidth <= 767 && (
+          <NavBar handleNavClick={handleNavClick} navText={navText} />
+        )}
+        <div className="hamburger-menu " onClick={toggleHamburgerNavBar}>
+          {isNavBarOpen ? (
+            <Fragment>
+              <CloseHamburger />
+              {screenWidth < 767 && (
+                <NavBar handleNavClick={handleNavClick} navText={navText} />
+              )}
+            </Fragment>
+          ) : (
+            <div className="icon">
+              <Hanburger />
+            </div>
+          )}
         </div>
       </div>
       <Outlet />
