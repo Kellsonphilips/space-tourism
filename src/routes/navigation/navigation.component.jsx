@@ -36,21 +36,19 @@ const Navigation = () => {
           <Logo />
         </Link>
         <div className="hor-line"></div>
-        {screenWidth <= 767 && (
+        {screenWidth > 767 && (
           <NavBar handleNavClick={handleNavClick} navText={navText} />
         )}
         <div className="hamburger-menu " onClick={toggleHamburgerNavBar}>
           {isNavBarOpen ? (
             <Fragment>
-              <CloseHamburger />
+              <CloseHamburger className="icon" />
               {screenWidth < 767 && (
                 <NavBar handleNavClick={handleNavClick} navText={navText} />
               )}
             </Fragment>
           ) : (
-            <div className="icon">
-              <Hanburger />
-            </div>
+            <Hanburger className="icon" />
           )}
         </div>
       </div>
