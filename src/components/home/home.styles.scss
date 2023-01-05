@@ -61,14 +61,13 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   .home-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     padding: 8rem 4rem;
     background-image: url($mobile-background);
+    background-size: contain;
 
     .home-text-container {
       width: 70vw;
       text-align: center;
-      padding-bottom: 2rem;
 
       .home-title {
         font-size: 3vw;
@@ -90,7 +89,7 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
       height: 12rem;
       position: relative;
       left: 3.5rem;
-      bottom: 3rem;
+      bottom: 5rem;
     }
   }
 }
