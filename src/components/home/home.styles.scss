@@ -61,9 +61,9 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   .home-container {
     display: flex;
     flex-direction: column;
-    padding: 8rem 4rem;
+    padding: 22vw 6vw;
     background-image: url($mobile-background);
-    background-size: contain;
+    background-size: auto;
 
     .home-text-container {
       width: 70vw;
@@ -78,16 +78,18 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
       }
 
       .welcome-message {
-        font-size: 3vw;
+        font-size: 2.5vw;
         letter-spacing: 0.1rem;
         line-height: 1.5rem;
       } 
     }
 
     .explore-container {
-      width: 12rem;
-      height: 12rem;
+      font-size: 4.5vw;
+      height: 40vw;
+      width: 40vw;
       position: relative;
+      text-align: center;
       left: 3.5rem;
       bottom: 5rem;
     }

@@ -33,7 +33,7 @@ const Navigation = () => {
     <Fragment>
       <div className="navigation-container" to="/">
         <Link to={"/"} className="logo">
-          <Logo className="h"/>
+          <Logo/>
         </Link>
         <div className="hor-line"></div>
         {screenWidth > 767 && (

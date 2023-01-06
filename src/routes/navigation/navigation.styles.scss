@@ -32,7 +32,9 @@
 @media screen and (max-width: 767px) {
 
   .navigation-container {
-    padding-left: 1rem;
+    top: 3.5vw;
+    margin-left: 6vw;
+    padding-left: .2rem;
     
 
     .hor-line {
@@ -40,18 +42,16 @@
     }
 
     .hamburger-menu {
-      display:grid;
-      position: absolute;
-      width: 0;
-      height: 0;
-      top: 1rem;
+      display: grid;
+      position: relative;
+      width: 70vw;
+      height: 5vw;
+      bottom: 2.5rem;
       z-index: 5;
   
       .icon {
-        width: 4rem;
-        height: 4rem;
-        left: 16rem;
-        position: relative;
+        left: 55vw;
+        position: absolute;
         cursor: pointer;
         z-index: 5;
       }
