@@ -45,16 +45,16 @@
     display: flex;
     height: 100vh;
     width: 80vw;
-    bottom: 2.5rem;
+    bottom: 2rem;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     text-align: left;
-    margin-left: 15vw;
+    margin-left: 1vw;
     align-items:flex-start;
     padding: 8rem 7rem 0 3rem;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
     backdrop-filter: blur(18.8px);
     -webkit-backdrop-filter: blur(12.8px);
     opacity: 1;
@@ -65,8 +65,8 @@
     .nav-link {
       color: #FFF;
       font-size: 3vw;
-      width: 40vw;
-      padding: 4vw 10vw 4vw 0;
+      width: 50vw;
+      padding: 3vw 0;
       border-right: 4px solid transparent;
 
       .nav-ident {
@@ -76,7 +76,7 @@
 
       &:hover {
         border-bottom: none;
-        border-right: 4px solid rgb(180, 176, 176);
+        border-right: 4px solid rgb(171, 160, 160);
       }
     }
 
