@@ -63,10 +63,9 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
     flex-direction: column;
     padding: 22vw 6vw;
     background-image: url($mobile-background);
-    background-size: auto;
 
     .home-text-container {
-      width: 70vw;
+      width: 80vw;
       text-align: center;
 
       .home-title {
@@ -90,8 +89,8 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
       width: 40vw;
       position: relative;
       text-align: center;
-      left: 3.5rem;
-      bottom: 5rem;
+      left: 15vw;
+      bottom: 20vw;
     }
   }
 }
