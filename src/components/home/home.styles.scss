@@ -61,7 +61,7 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   .home-container {
     display: flex;
     flex-direction: column;
-    padding: 22vw 6vw;
+    padding: 18vw 6vw;
     background-image: url($mobile-background);
 
     .home-text-container {
@@ -89,11 +89,10 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
       justify-content: center;
       text-align: center;
       font-size: 4.5vw;
-      height: 20vw;
-      width: 45vw;
-      border-radius: 100%;
+      height: 44vw;
+      width: 44vw;
       position: relative;
-      left: 25vw;
+      left: 20vw;
       bottom: 20vw;
     }
   }
