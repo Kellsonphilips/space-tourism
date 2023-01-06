@@ -39,7 +39,7 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
     background-color: #FFF;
     color: #000;
     font-size: 22px;
-    border-radius: 150px;
+    border-radius: 100%;
     margin-top: 120px;
     text-align: center;
     padding: 90px 50px;
@@ -65,7 +65,8 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
     background-image: url($mobile-background);
 
     .home-text-container {
-      width: 80vw;
+      position: relative;
+      width: 90vw;
       text-align: center;
 
       .home-title {
@@ -73,23 +74,26 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
       }
 
       .space {
-        font-size: 20vw;
+        font-size: 25vw;
       }
 
       .welcome-message {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         letter-spacing: 0.1rem;
         line-height: 1.5rem;
       } 
     }
 
     .explore-container {
-      font-size: 4.5vw;
-      height: 40vw;
-      width: 40vw;
-      position: relative;
+      display: flex;
+      justify-content: center;
       text-align: center;
-      left: 15vw;
+      font-size: 4.5vw;
+      height: 20vw;
+      width: 45vw;
+      border-radius: 100%;
+      position: relative;
+      left: 25vw;
       bottom: 20vw;
     }
   }
