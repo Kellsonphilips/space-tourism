@@ -116,9 +116,10 @@ $mobile-destination-background: "../../assets/destination/background-destination
 @media screen and (max-width: 767px) {
   .destination-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-image: url($mobile-destination-background);
-    padding: 12rem 2rem;
+    padding: 35rem 2rem;
     text-align: center;
 
     .destination-header {
@@ -136,7 +137,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
     .destination-image {
       width: 35vw;
       height: 35vw;
-      left: 7rem;
+      left: 22vw;
       bottom: 8rem;
     }
 
@@ -159,7 +160,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
       }
 
       .destination {
-        font-size: 10vw;
+        font-size: 13vw;
         width: 100%;
         height: 6vh;
         padding: 0;
