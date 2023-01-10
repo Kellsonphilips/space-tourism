@@ -16,6 +16,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
   .destination-header {
     font-size: 1.4vw;
     height: 1.4vw;
+    width: 20vw;
     font-family: var(--font-primary);
     font-weight: lighter;
     position: relative;
@@ -24,15 +25,15 @@ $mobile-destination-background: "../../assets/destination/background-destination
 
     .destination-index {
       opacity: 0.4;
-      padding-right: 1vw;
+      padding-right: 2vw;
     }
   }
 
   .destination-image {
-    position: absolute;
+    position: relative;
     width: 25vw;
     height: 25vw;
-    left: 300px;
+    right: 300px;
   }
 
   .destination-detail-container {
@@ -63,7 +64,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
     }
 
     .destination {
-      font-family: 'Fira Sans', sans-serif;
+      font-family: 'Lora', serif;
       font-size: 5vw;
       letter-spacing: 15px;
     }
@@ -106,6 +107,119 @@ $mobile-destination-background: "../../assets/destination/background-destination
 
         .duration {
           font-size: 1.4vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .destination-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url($mobile-destination-background);
+    padding: 12rem 2rem;
+    text-align: center;
+
+    .destination-header {
+      font-size: 3vw;
+      width: 100%;
+      height: 7vw;
+      letter-spacing: 0.4vw;
+      margin-bottom: 1rem;
+
+      .destination-index {
+        padding: auto;
+      }
+    }
+
+    .destination-image {
+      width: 35vw;
+      height: 35vw;
+      left: 7rem;
+      bottom: 8rem;
+    }
+
+    .destination-detail-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+      bottom: 7rem;
+
+      .destination-navbar {
+        width: 100%;
+        justify-content: center;
+
+        .navLink {
+          font-size: 3vw;
+        }
+      }
+
+      .destination {
+        font-size: 10vw;
+        width: 100%;
+        height: 6vh;
+        padding: 0;
+        position: relative;
+        bottom: 1.5rem;
+      }
+
+      .destination-details {
+        position: relative;
+        bottom: 4rem;
+        letter-spacing: .2vw;
+      }
+
+      .horizontal-line {
+        width: 100%;
+        position: relative;
+        bottom: 7rem;
+      }
+
+      .destination-detail {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-transform: uppercase;
+        bottom: 7rem;
+        left: 1.5rem;
+
+        .destination-distance {
+          width: 100%;
+
+          .avg-dis {
+            font-size: 3vw;
+          }
+
+          .distance {
+            position: relative;
+            font-size: 6vw;
+            bottom: 1rem;
+          }
+        }
+
+        .destination-travel-time {
+          position: relative;
+          bottom: 2rem;
+          right: 2rem;
+          width: 100%;
+
+
+          .est-time {
+            font-size: 3vw;
+          }
+
+          .duration {
+            position: relative;
+            font-size: 6vw;
+            bottom: 1rem;
+          }
         }
       }
     }
