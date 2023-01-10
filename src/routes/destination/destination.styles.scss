@@ -165,19 +165,20 @@ $mobile-destination-background: "../../assets/destination/background-destination
         height: 6vh;
         padding: 0;
         position: relative;
-        bottom: 1.5rem;
+        bottom: 2rem;
       }
 
       .destination-details {
         position: relative;
-        bottom: 4rem;
+        bottom: 5rem;
         letter-spacing: .2vw;
+        line-height: 6vw;
       }
 
       .horizontal-line {
         width: 100%;
         position: relative;
-        bottom: 7rem;
+        bottom: 7.7rem;
       }
 
       .destination-detail {
@@ -188,7 +189,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
         height: auto;
         position: relative;
         text-transform: uppercase;
-        bottom: 7rem;
+        bottom: 8rem;
         left: 1.5rem;
 
         .destination-distance {
@@ -207,7 +208,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
 
         .destination-travel-time {
           position: relative;
-          bottom: 2rem;
+          bottom: 2.5rem;
           right: 2rem;
           width: 100%;
 
