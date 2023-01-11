@@ -108,7 +108,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
     justify-content: center;
     flex-direction: column;
     background-image: url($mobile-technology-background);
-    padding: 30vw 0;
+    padding: 25vw 0;
 
     .technology-all-info-container {
       display: flex;
@@ -124,7 +124,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
         font-size: 4vw;
         position: relative;
         height: 6vw;
-        bottom: 1rem;
+        bottom: 2rem;
       }
 
       .technology-details-container {
@@ -141,6 +141,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
           justify-content: center;
           position: relative;
           left: 1rem;
+          top: 1rem;
 
           .route-indexes {
             width: 10vw;
@@ -176,7 +177,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
     .technology-image-container {
       height: auto;
       position: relative;
-      bottom: 8rem;
+      bottom: 9rem;
 
       .image {
         width: 100%;
