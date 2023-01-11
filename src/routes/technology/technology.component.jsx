@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./technology.styles.scss";
 
 
@@ -8,17 +8,27 @@ const Technology = ({ techData }) => {
   
   const { technology } = techData;
   const [useTechnology, setUseTechnology] = useState(9)
+  const [screenWidth, setScreenWidth] = useState(0);
 
   const handleTechnologyRoute = ((event) => {
     const routeId = Number(event.target.name);
     setUseTechnology(routeId);
   })
 
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  }, []);
+
   const object = technology.find((obj) => obj.id === useTechnology);
   const { id, name, description } = object;
-  const images = require(`../../assets/technology/technology-portrait/image-${name
+  const imagePortrait = require(`../../assets/technology/technology-portrait/image-${name
     .toLowerCase()
     .replace(" ", "-")}-portrait.jpg`);
+  const imageLandscape = require(`../../assets/technology/technology-landscape/image-${name
+    .toLowerCase()
+    .replace(" ", "-")}-landscape.jpg`);
 
   return (
     <div className="technology-container" key={id}>
@@ -61,11 +71,19 @@ const Technology = ({ techData }) => {
         </div>
       </div>
       <div className="technology-image-container">
-        <img
-          className="image"
-          src={images}
-          alt={`img-${name.toLowerCase().replace(" ", "-")}`}
-        />
+        {screenWidth > 767 ? (
+          <img
+            className="image"
+            src={imagePortrait}
+            alt={`img-${name.toLowerCase().replace(" ", "-")}`}
+          />
+        ) : (
+          <img
+            className="image"
+            src={imageLandscape}
+            alt={`img-${name.toLowerCase().replace(" ", "-")}`}
+          />
+        )}
       </div>
     </div>
   );
