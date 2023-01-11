@@ -141,6 +141,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
           justify-content: center;
           position: relative;
           padding: 1rem 1rem 2rem;
+          bottom: .5rem;
 
           .route-indexes {
             width: 10vw;
@@ -150,6 +151,8 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
         }
 
         .technology-details {
+          position: relative;
+          bottom: 2.5rem;
 
           .technology-detail-header {
             font-size: 3vw;
@@ -165,7 +168,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
 
           .technology-description {
             font-size: 3vw;
-            line-height: 4vw;
+            line-height: 6vw;
             letter-spacing: 0.4vw;
             position: relative;
             bottom: 2rem;
