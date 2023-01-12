@@ -95,7 +95,7 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
     flex-direction: column;
     justify-content: center;
     background-image: url($mobile-crew-background);
-    padding: 30vw 7vw;
+    padding: 10vw 7vw;
     text-align: center;
 
     .crew-info-container {
@@ -111,7 +111,7 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
 
       .crew-details-container {
         position: relative;
-        top: 5rem;
+        top: 4rem;
 
         .crew-role {
           font-size: 4vw;
@@ -123,27 +123,28 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
         }
         .crew-details {
           line-height: 6vw;
+          padding: 1rem;
         }
       }
 
       .crew-navigation {
         display: flex;
         justify-content: center;
-        bottom: 19rem;
-        left: 1vw;
-        width: 100%;
-        position: absolute;
+        width: 90vw;
+        height: 0;
+        position: relative;
+        bottom: 17rem;
 
         .crew-navs {
-          width: 3vw;
-          height: 3vw;
+          width: 4vw;
+          height: 4vw;
         }
       }
     }
 
     .crew-image-container {
       position: relative;
-      bottom: 9rem;
+      bottom: 10rem;
       width: 100%;
       padding-left: 27vw;
       border-bottom: 1px solid rgb(83, 78, 78);

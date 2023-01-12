@@ -38,6 +38,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
 
   .destination-detail-container {
     width: 22vw;
+    height: 0;
 
     .destination-navbar {
       display: flex;
@@ -74,7 +75,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
     }
 
     .horizontal-line {
-      border: 1px solid rgb(91, 85, 85);
+      border: 1px solid rgb(163, 155, 155);
       width: 22vw;
       opacity: 0.3;
       margin: 50px 0 0 0;
@@ -85,6 +86,8 @@ $mobile-destination-background: "../../assets/destination/background-destination
     .destination-detail {
       display: flex;
       justify-content: flex-start;
+      align-items: center;
+      text-transform: uppercase;
 
       .destination-distance {
         padding-right: 60px;
@@ -118,40 +121,35 @@ $mobile-destination-background: "../../assets/destination/background-destination
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     background-image: url($mobile-destination-background);
-    padding: 34rem 2rem;
+    padding: 10vw 6vw;
     text-align: center;
 
     .destination-header {
       font-size: 4vw;
       width: 100%;
-      height: 7vw;
+      height: 0;
       letter-spacing: 0.4vw;
-      margin-bottom: 1rem;
-
-      .destination-index {
-        padding: auto;
-      }
+      bottom: 12rem;
     }
 
     .destination-image {
       width: 35vw;
       height: 35vw;
-      left: 22vw;
-      bottom: 8rem;
+      left: 1vw;
+      bottom: 11rem;
     }
 
     .destination-detail-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
       width: 100%;
+      height: 0;
       position: relative;
-      bottom: 7rem;
+      bottom: 11rem;
 
       .destination-navbar {
         width: 100%;
+        height: 7vw;
         justify-content: center;
 
         .navLink {
@@ -162,55 +160,56 @@ $mobile-destination-background: "../../assets/destination/background-destination
       .destination {
         font-size: 13vw;
         width: 100%;
-        height: 6vh;
-        padding: 0;
+        height: 0;
+        padding: 0 2.5rem;
         position: relative;
-        bottom: 2rem;
+        bottom: 2.5rem;
       }
 
       .destination-details {
-        position: relative;
-        bottom: 5rem;
+        height: 0;
         letter-spacing: .2vw;
         line-height: 6vw;
+        padding: 1rem;
+        position: relative;
+        bottom: 3rem;
       }
 
       .horizontal-line {
         width: 100%;
-        position: relative;
-        bottom: 7.7rem;
+        top: 1.5rem;
       }
 
       .destination-detail {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
         width: 100%;
-        height: auto;
+        height: 0;
         position: relative;
         text-transform: uppercase;
-        bottom: 8rem;
-        left: 1.5rem;
+        top: 6.5rem;
 
         .destination-distance {
           width: 100%;
+          height: 0;
+          padding-right: 0;
+          position: relative;
+          bottom: 5rem;
 
           .avg-dis {
             font-size: 3vw;
           }
 
           .distance {
-            position: relative;
-            font-size: 6vw;
-            bottom: 1rem;
+            font-size: 4.5vw;
           }
         }
 
         .destination-travel-time {
-          position: relative;
-          bottom: 2.5rem;
-          right: 2rem;
           width: 100%;
+          height: 0;
 
 
           .est-time {
@@ -218,8 +217,109 @@ $mobile-destination-background: "../../assets/destination/background-destination
           }
 
           .duration {
-            position: relative;
-            font-size: 6vw;
+            font-size: 4.5vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .destination-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url($tablet-destination-background);
+    padding: 15vw 10vw;
+    text-align: center;
+
+    .destination-header {
+      font-size: 2vw;
+      width: 100%;
+      height: 7vw;
+      letter-spacing: 0.4vw;
+      right: 12rem;
+      bottom: 11rem;
+
+      .destination-index {
+        padding-right: 1rem;
+      }
+    }
+
+    .destination-image {
+      width: 30vw;
+      height: 30vw;
+      bottom: 12rem;
+      left: .5vw;
+    }
+
+    .destination-detail-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+
+      .destination-navbar {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        top: 3rem;
+
+        .navLink {
+          font-size: 2vw;
+        }
+      }
+
+      .destination {
+        font-size: 11vw;
+        width: 100%;
+        height: 0;
+      }
+
+      .destination-details {
+        letter-spacing: .2vw;
+        line-height: 4vw;
+      }
+
+      .horizontal-line {
+        width: 100%;
+        bottom: 3rem;
+      }
+
+      .destination-detail {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 2rem;
+
+        .destination-distance {
+          width: 100%;
+
+          .avg-dis {
+            font-size: 2vw;
+          }
+
+          .distance {
+            font-size: 4vw;
+            bottom: 1rem;
+          }
+        }
+
+        .destination-travel-time {
+          right: 2rem;
+          width: 100%;
+
+
+          .est-time {
+            font-size: 2vw;
+          }
+
+          .duration {
+            font-size: 4vw;
             bottom: 1rem;
           }
         }

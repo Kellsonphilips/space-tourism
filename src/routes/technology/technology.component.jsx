@@ -71,7 +71,7 @@ const Technology = ({ techData }) => {
         </div>
       </div>
       <div className="technology-image-container">
-        {screenWidth > 767 ? (
+        {screenWidth > 991 ? (
           <img
             className="image"
             src={imagePortrait}
