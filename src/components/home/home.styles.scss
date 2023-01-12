@@ -6,7 +6,7 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   display: flex;
   color: aliceblue;
   height: 100vh;
-  padding: 400px 200px 400px 350px;
+  padding: 15vw;
   justify-content: space-between;
   background-image: url($desktop-background);
   background-size: cover;
@@ -14,6 +14,7 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   
   .home-text-container {
     width: 25vw;
+    height: 0;
 
     .home-title {
       text-transform: uppercase;
@@ -34,15 +35,16 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   }
 
   .explore-container {
-    height: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 12vw;
+    height: 12vw;
     background-color: #FFF;
     color: #000;
-    font-size: 22px;
-    border-radius: 100%;
-    margin-top: 120px;
-    text-align: center;
-    padding: 90px 50px;
+    font-size: 1.2vw;
+    border-radius: 50%;
+    margin-top: 5vw;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
@@ -61,13 +63,13 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   .home-container {
     display: flex;
     flex-direction: column;
-    padding: 18vw 6vw;
+    align-items: center;
+    text-align: center;
+    padding: 15vw 6vw;
     background-image: url($mobile-background);
 
     .home-text-container {
-      position: relative;
       width: 90vw;
-      text-align: center;
 
       .home-title {
         font-size: 3vw;
@@ -85,15 +87,46 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
     }
 
     .explore-container {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      font-size: 4.5vw;
-      height: 40vw;
-      width: 44vw;
-      position: relative;
-      left: 20vw;
-      bottom: 20vw;
+      font-size: 4vw;
+      width: 35vw;
+      height: 35vw;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vw 10vw;
+    background-image: url($tablet-background);
+    text-align: center;
+
+    .home-text-container {
+      width: 80vw;
+
+      .home-title {
+        font-size: 2.5vw;
+        padding-bottom: 1rem;
+      }
+
+      .space {
+        font-size: 15vw;
+      }
+
+      .welcome-message {
+        font-size: 2.5vw;
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
+        padding: 2rem;
+      } 
+    }
+
+    .explore-container {
+      font-size: 3vw;
+      height: 25vw;
+      width: 25vw;
     }
   }
 }

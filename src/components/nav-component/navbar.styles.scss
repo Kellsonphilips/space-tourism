@@ -87,3 +87,15 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navlinks {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+
+    .nav-link {
+      font-size: 1.2vw;
+    }
+  }
+}
