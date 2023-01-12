@@ -107,10 +107,8 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     background-image: url($mobile-technology-background);
     padding: 25vw 0;
-    text-align: center;
 
     .technology-all-info-container {
       display: flex;
@@ -126,7 +124,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
         font-size: 4vw;
         position: relative;
         height: 6vw;
-        bottom: 4rem;
+        bottom: 1rem;
       }
 
       .technology-details-container {
@@ -136,15 +134,14 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
         height: 50vh;
         padding: 0;
         position: relative;
-        top: 12rem;
+        top: 13rem;
 
         .technology-route-container {
           display: flex;
           justify-content: center;
-          height: 0;
           position: relative;
-          bottom: 4rem;
-          left: 4vw;
+          padding: 1rem 1rem 2rem;
+          bottom: .5rem;
 
           .route-indexes {
             width: 10vw;
@@ -155,6 +152,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
 
         .technology-details {
           position: relative;
+          bottom: 2.5rem;
 
           .technology-detail-header {
             font-size: 3vw;
@@ -165,17 +163,15 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
           .technology-name {
             font-size: 9vw;
             position: relative;
-            bottom: 2rem;
+            bottom: 1rem;
           }
 
           .technology-description {
-            height: 0;
             font-size: 3vw;
             line-height: 6vw;
             letter-spacing: 0.4vw;
             position: relative;
-            bottom: 4rem;
-            padding: 1rem;
+            bottom: 2rem;
           }
         }
       }
@@ -184,7 +180,7 @@ $mobile-technology-background: "../../assets/technology/background-technology-mo
     .technology-image-container {
       height: auto;
       position: relative;
-      bottom: 9rem;
+      bottom: 10rem;
 
       .image {
         width: 100%;
