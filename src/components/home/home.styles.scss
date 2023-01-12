@@ -88,8 +88,10 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
 
     .explore-container {
       font-size: 4vw;
-      width: 35vw;
-      height: 35vw;
+      width: 40vw;
+      height: 40vw;
+      position: relative;
+      bottom: 2rem;
     }
   }
 }
