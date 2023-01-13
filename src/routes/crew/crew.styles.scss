@@ -61,9 +61,9 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
       top: 4rem;
 
       .crew-navs {
-        width: 2vw;
-        height: 2vw;
-        background-color: rgb(11, 10, 10);
+        width: 1vw;
+        height: 1vw;
+        background-color: rgb(97, 95, 95);
         margin-right: 15px;
         border-radius: 50%;
         border: rgb(172, 164, 164) 1px solid;
@@ -136,11 +136,12 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
         width: 90vw;
         height: 4vw;
         position: absolute;
-        top: 20.5rem;
+        top: 21.5rem;
 
         .crew-navs {
-          width: 5vw;
-          height: 5vw;
+          width: 2vw;
+          height: 2vw;
+          border: 0;
         }
       }
     }
@@ -174,66 +175,61 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
 
     .crew-info-container {
       width: 100%;
-      height: 0;
+      position: relative;
+      bottom: 19rem;
 
       .crew-header {
         display: flex;
-        justify-content: center;
-        bottom: 11rem;
-        font-size: 4vw;
+        justify-content: flex-start;
+        font-size: 2vw;
+        width: 100%;
+        height: 7vw;
+        letter-spacing: 0.4vw;
+        bottom: 3rem;
       }
 
       .crew-details-container {
-        position: relative;
-        top: 15rem;
+        padding: 0 2rem;
+        bottom: 4rem;
 
         .crew-role {
           font-size: 3vw;
-          position: relative;
-          top: 2rem;
         }
 
         .crew-name {
-          font-size: 7vw;
+          font-size: 4vw;
           font-family: 'Lora', serif;
         }
         .crew-details {
           line-height: 4vw;
-          padding: 1rem;
-          position: relative;
-          bottom: 2rem;
-          padding: 1rem;
+          padding: 0 2rem;
         }
       }
 
       .crew-navigation {
         display: flex;
         justify-content: center;
-        width: 90vw;
-        height: 0;
+        width: 85vw;
         position: absolute;
-        top: 36rem;
+        top: 17rem;
 
         .crew-navs {
-          width: 4vw;
-          height: 4vw;
+          width: 1vw;
+          height: 1vw;
+          border: 0;
         }
       }
     }
 
     .crew-image-container {
       position: relative;
-      bottom: 6rem;
       width: 100%;
-      padding-left: 27vw;
-      border-bottom: 1px solid rgb(83, 78, 78);
+      height: 0;
+      top: 3rem;
 
       .image {
-        display: flex;
-        justify-content: center;
-        align-self: center;
         width: 40vw;
-        height: 45vw;
+        height: 50vw;
       }
     }
   }
