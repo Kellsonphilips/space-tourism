@@ -13,24 +13,24 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
   
   
   .home-text-container {
-    width: 25vw;
+    width: 30vw;
     height: 0;
 
     .home-title {
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 1.5vw;
       letter-spacing: .2rem;
     }
 
     .space {
-      font-size: 6.5rem;
+      font-size: 10vw;
       text-transform: uppercase;
       font-family: 'Lora', serif;
     }
 
     .welcome-message {
-      letter-spacing: 0.1rem;
-      line-height: 20px;
+      letter-spacing: .1vw;
+      line-height: 1.5vw;
     } 
   }
 
@@ -44,7 +44,7 @@ $mobile-background: "../../assets/home/background-home-mobile.jpg";
     color: #000;
     font-size: 1.2vw;
     border-radius: 50%;
-    margin-top: 5vw;
+    margin-top: 10vw;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
