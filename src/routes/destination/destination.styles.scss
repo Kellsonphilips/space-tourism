@@ -8,19 +8,19 @@ $mobile-destination-background: "../../assets/destination/background-destination
   display: flex;
   height: 100vh;
   justify-content: space-between;
-  padding: 300px 250px;
+  padding: 15vw 6vw;
   background-image: url($desktop-destination-background);
   background-size: cover;
   position: relative;
 
   .destination-header {
     font-size: 1.4vw;
-    height: 1.4vw;
-    width: 20vw;
+    height: 2.5vw;
+    width: 80vw;
     font-family: var(--font-primary);
     font-weight: lighter;
     position: relative;
-    bottom: 120px;
+    bottom: 5rem;
     text-transform: uppercase;
 
     .destination-index {
@@ -30,10 +30,10 @@ $mobile-destination-background: "../../assets/destination/background-destination
   }
 
   .destination-image {
-    position: relative;
     width: 25vw;
     height: 25vw;
-    right: 300px;
+    position: relative;
+    right: 35vw;
   }
 
   .destination-detail-container {
@@ -68,10 +68,14 @@ $mobile-destination-background: "../../assets/destination/background-destination
       font-family: 'Lora', serif;
       font-size: 5vw;
       letter-spacing: 15px;
+      position: relative;
+      bottom: 2rem;
     }
 
     .destination-details {
-      line-height: 20px;
+      line-height: 22px;
+      position: relative;
+      bottom: 4rem;
     }
 
     .horizontal-line {
@@ -80,7 +84,7 @@ $mobile-destination-background: "../../assets/destination/background-destination
       opacity: 0.3;
       margin: 50px 0 0 0;
       position: relative;
-      bottom: 15px;
+      bottom: 5rem;
     }
 
     .destination-detail {
@@ -88,6 +92,8 @@ $mobile-destination-background: "../../assets/destination/background-destination
       justify-content: flex-start;
       align-items: center;
       text-transform: uppercase;
+      position: relative;
+      bottom: 5rem;
 
       .destination-distance {
         padding-right: 60px;
@@ -283,6 +289,8 @@ $mobile-destination-background: "../../assets/destination/background-destination
       .destination-details {
         letter-spacing: .2vw;
         line-height: 4vw;
+        position: relative;
+        bottom: 1rem;
       }
 
       .horizontal-line {
