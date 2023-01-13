@@ -7,31 +7,32 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
   color: aliceblue;
   display: flex;
   height: 100vh;
-  padding: 300px 300px;
+  padding: 15vw 7vw;
   background-image: url($desktop-crew-background);
   background-size: cover;
   justify-content: space-between;
 
   .crew-info-container {
-    width: clamp(20rem, 80%, 29rem);
+    width: 35vw;
+    height: 0;
 
     .crew-header {
-      font-size: 1.4vw;
+      font-size: 2vw;
       font-family: var(--font-primary);
       font-weight: lighter;
       position: relative;
-      bottom: 120px;
+      bottom: 5rem;
       text-transform: uppercase;
 
       .crew-index {
-        padding-right: 15px;
+        padding-right: 1rem;
         opacity: 0.4;
       }
     }
 
     .crew-details-container {
       position: relative;
-      top: 80px;
+      bottom: 2rem;
 
       .crew-role {
         font-size: 2rem;
@@ -56,12 +57,12 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
     .crew-navigation {
       display: flex;
       justify-content: flex-start;
-      position: absolute;
-      bottom: 120px;
+      position: relative;
+      top: 4rem;
 
       .crew-navs {
-        width: 1vw;
-        height: 1vw;
+        width: 2vw;
+        height: 2vw;
         background-color: rgb(11, 10, 10);
         margin-right: 15px;
         border-radius: 50%;
@@ -111,7 +112,7 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
 
       .crew-details-container {
         position: relative;
-        top: 4rem;
+        top: 5rem;
 
         .crew-role {
           font-size: 4vw;
@@ -133,13 +134,13 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
         display: flex;
         justify-content: center;
         width: 90vw;
-        height: 0;
-        position: relative;
-        bottom: 17rem;
+        height: 4vw;
+        position: absolute;
+        top: 27rem;
 
         .crew-navs {
-          width: 4vw;
-          height: 4vw;
+          width: 5vw;
+          height: 5vw;
         }
       }
     }
@@ -210,8 +211,8 @@ $mobile-crew-background: "../../assets/crew/background-crew-mobile.jpg";
         justify-content: center;
         width: 90vw;
         height: 0;
-        position: relative;
-        bottom: 8rem;
+        position: absolute;
+        top: 36rem;
 
         .crew-navs {
           width: 4vw;
